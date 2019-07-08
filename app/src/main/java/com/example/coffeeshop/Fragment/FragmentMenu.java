@@ -69,7 +69,7 @@ public class FragmentMenu extends Fragment implements BaseSliderView.OnSliderCli
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Default);
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
-        sliderLayout.setDuration(10000);
+        sliderLayout.setDuration(5000);
         sliderLayout.addOnPageChangeListener(this);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity()){
@@ -87,7 +87,7 @@ public class FragmentMenu extends Fragment implements BaseSliderView.OnSliderCli
         RequestQueue queue = Volley.newRequestQueue(getContext());
 
         //create request
-        String url = "https://api.myjson.com/bins/pypbn";
+        String url = "https://api.myjson.com/bins/lq5vz";
         JsonArrayRequest request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {

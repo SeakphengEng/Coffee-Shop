@@ -105,10 +105,10 @@ public class AdapterHotDrinks extends RecyclerView.Adapter<AdapterHotDrinks.Draw
 
     @Override
     public int getItemCount() {
-        if (types == null){
+        if (names == null){
             return 0;
         }else {
-            return types.length;
+            return names.length;
         }
     }
 

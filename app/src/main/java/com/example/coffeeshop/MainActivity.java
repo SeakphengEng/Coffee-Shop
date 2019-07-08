@@ -70,11 +70,6 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new FragmentAbout();
                         loadFragment(fragment);
                         break;
-                    case R.id.nav_logout:
-                        getSupportActionBar().setTitle("Sign Out");
-                        fragment = new FragmentSignOut();
-                        loadFragment(fragment);
-                        break;
                 }
 
                 return true;
