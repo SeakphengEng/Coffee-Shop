@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CoffeeShop</string>
+    <string name="coffee_shop">Coffee Shop</string>
+    <string name="nav_menu">MENU</string>
+    <string name="nav_card">CARD</string>
+    <string name="nav_promo">PROMOTION</string>
+    <string name="nav_map">MAP</string>
+    <string name="nav_about">ABOUT US</string>
+    <string name="nav_logout">LOG OUT</string>
+    <string name="userName">RozBot2k</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hot_drinks">Hot Drinks</string>
+    <string name="types">(types)</string>
+    <string name="name_of_drinks">Name of Drinks</string>
+    <string name="pricel">price L: </string>
+    <string name="_5_00">​​$ 5.00</string>
+    <string name="price_s">Price S: </string>
+    <string name="price_m">Price M: </string>
+    <string name="typesString">Types: </string>
+</resources>
