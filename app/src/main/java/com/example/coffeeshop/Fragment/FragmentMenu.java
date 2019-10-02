@@ -21,7 +21,7 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
-import com.example.coffeeshop.Adapter.AdapterHotDrinks;
+import com.example.coffeeshop.Adapter.AdapterDrinks;
 import com.example.coffeeshop.R;
 
 import org.json.JSONArray;
@@ -70,7 +70,8 @@ public class FragmentMenu extends Fragment implements BaseSliderView.OnSliderCli
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
         sliderLayout.setDuration(5000);
-        sliderLayout.addOnPageChangeListener(this);
+        sliderLayout.addOnPageChangeListener(
+                this);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity()){
             @Override
@@ -81,7 +82,7 @@ public class FragmentMenu extends Fragment implements BaseSliderView.OnSliderCli
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setNestedScrollingEnabled(false);
 
-        final AdapterHotDrinks adapterHotDrinks = new AdapterHotDrinks();
+        final AdapterDrinks adapterHotDrinks = new AdapterDrinks();
         recyclerView.setAdapter(adapterHotDrinks);
 
         RequestQueue queue = Volley.newRequestQueue(getContext());

@@ -15,7 +15,7 @@ import com.example.coffeeshop.MainDetailActivity;
 import com.example.coffeeshop.R;
 import com.squareup.picasso.Picasso;
 
-public class AdapterHotDrinks extends RecyclerView.Adapter<AdapterHotDrinks.DrawerViewHolder> {
+public class AdapterDrinks extends RecyclerView.Adapter<AdapterDrinks.DrawerViewHolder> {
 
     private Context context;
     private String[] names;
@@ -62,15 +62,15 @@ public class AdapterHotDrinks extends RecyclerView.Adapter<AdapterHotDrinks.Draw
 
     @NonNull
     @Override
-    public AdapterHotDrinks.DrawerViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public AdapterDrinks.DrawerViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
         View itemView = layoutInflater.inflate(R.layout.viewholder_drinks, viewGroup, false);
-        AdapterHotDrinks.DrawerViewHolder viewHolder = new AdapterHotDrinks.DrawerViewHolder(itemView);
+        AdapterDrinks.DrawerViewHolder viewHolder = new AdapterDrinks.DrawerViewHolder(itemView);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterHotDrinks.DrawerViewHolder drawerViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull AdapterDrinks.DrawerViewHolder drawerViewHolder, final int i) {
         String nameDrink = names[i];
         String priceS = priceSs[i];
         String priceM = priceMs[i];

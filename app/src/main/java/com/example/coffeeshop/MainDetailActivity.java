@@ -4,28 +4,16 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.coffeeshop.Adapter.AdapterHotDrinks;
+import com.example.coffeeshop.Adapter.AdapterDrinks;
 import com.squareup.picasso.Picasso;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 public class MainDetailActivity extends AppCompatActivity {
 
-    private AdapterHotDrinks adapter;
+    private AdapterDrinks adapter;
     private String nameDrink;
 
     @Override
